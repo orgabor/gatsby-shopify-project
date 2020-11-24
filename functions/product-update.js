@@ -5,7 +5,7 @@ const axios = require('axios');
 const q = faunadb.query;
 
 const client = new faunadb.Client({
-	secret: process.env.FAUNADB_CLIENT,
+	secret: process.env.FAUNADB_SECRET,
 })
 
 exports.handler = function(event, context, callback){
